@@ -1,6 +1,5 @@
-// alert("preview")
 
-                      // WORK EXPERIENCE FIELD
+// WORK EXPERIENCE FIELD
 function addNewWeField(){
 // console.log("mmmmmmm");
 let newNode=document.createElement('textarea');
