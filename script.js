@@ -1,7 +1,7 @@
 
 // WORK EXPERIENCE FIELD
 function addNewWeField(){
-// console.log("mmmmmmm");
+
 let newNode=document.createElement('textarea');
 newNode.classList.add('form-control');
 newNode.classList.add ('weField');
@@ -16,7 +16,7 @@ let weAddButtonOb = document.getElementById('weAddButton');
 weOb.insertBefore(newNode,weAddButtonOb);
 }
 
-                       //  EDUCATION FIELD
+//  EDUCATION FIELD
 function addNewEduField(){
     let newNode=document.createElement('textarea');
 newNode.classList.add('form-control');
@@ -32,8 +32,7 @@ eduOb.insertBefore(newNode,eduAddButtonOb);
 
 }
 
-
-                       // projects
+// projects
 function addNewPjField(){
     let newNode=document.createElement('textarea');
 newNode.classList.add('form-control');
@@ -48,8 +47,7 @@ let pjAddButtonOb = document.getElementById('pjAddButton');
 pjOb.insertBefore(newNode,pjAddButtonOb);
 }
 
-
-                         // skills
+ // skills
 function addNewSkField(){
     let newNode=document.createElement('textarea');
 newNode.classList.add('form-control');
@@ -63,8 +61,7 @@ let skAddButtonOb = document.getElementById('skAddButton');
 
 skOb.insertBefore(newNode,skAddButtonOb);
 }
-
-                            // languages
+// languages
 function addNewlgField(){
     let newNode=document.createElement('textarea');
 newNode.classList.add('form-control');
@@ -79,14 +76,13 @@ let lgAddButtonOb = document.getElementById('lgAddButton');
 lgOb.insertBefore(newNode,lgAddButtonOb);
 }
 
-///////////////////////////////////////
 document.getElementById("download").style.display = "none";
 
 
 
 // generating cv function
 function generateCV(){
-    // console.log("generating....");
+
 
     let nameField = document.getElementById("nameField").value;
     let nameT = document.getElementById("nameT");
@@ -182,12 +178,12 @@ function formCV(){
     document.getElementById("cv-form").style.display = "block";
    document.getElementById("cv-template").style.display = "none";
 
-//   document.getElementById("download").style.display = "none";
+
 }
 
 //pdf generate
 const areaCv = document.getElementById("cv-template");
-// let resumeButton =document.getElementById("download"); 
+
 
     let opt = {
         margin:       0,
@@ -197,16 +193,7 @@ const areaCv = document.getElementById("cv-template");
         jsPDF:        { format: 'a4', orientation: 'portrait' }
       };
 
-// function printCV(){
-//     html2pdf(areaCv,opt)
-// }
-// resumeButton.addEventListener('click', ()=>{
 
-//     // generateResume()
-//     printCV()
-
-// })
- 
 
 // pdf
 window.onload=function(){
