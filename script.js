@@ -98,14 +98,12 @@ function generateCV(){
    document.getElementById("contactT").innerHTML =  document.getElementById("contactField").value;
 
    document.getElementById("emailT").innerHTML =  document.getElementById("emailField").value;
-
    document.getElementById("lkT").innerHTML =  document.getElementById("lkField").value;
    document.getElementById("ttT").innerHTML =  document.getElementById("ttField").value;
    document.getElementById("wbT").innerHTML =  document.getElementById("wbField").value;
    document.getElementById("gtT").innerHTML =  document.getElementById("wbField").value;
    document.getElementById("pfT").innerHTML =  document.getElementById("pfField").value;
    document.getElementById("psT").innerHTML =  document.getElementById("psField").value;
-
 
   //  work experience
   let wes = document.getElementsByClassName("weField");
@@ -128,8 +126,6 @@ function generateCV(){
   </div> ${e.value} </div>`;
   }
   document.getElementById("eduT").innerHTML = str1;
-  
-
 //projects string
   let pjs = document.getElementsByClassName("pjField");
   let str2 = '';
@@ -148,8 +144,6 @@ function generateCV(){
       str3= str3 + `<li> <span class="skills_circle" id="c"></span>${e.value} </li>`;
   }
   document.getElementById("skT").innerHTML = str3;
-
-
 // languages
 let lgs = document.getElementsByClassName("lgField");
 let str4 = '';
@@ -169,14 +163,12 @@ console.log(reader.result);
 reader.onloadend =function(){
     document.getElementById("imageT").src= reader.result; 
 }
-
-
 document.getElementById("goback").style.display = "block";
 document.getElementById("download").style.display = "block";
  document.getElementById("cv-form").style.display = "none";
   document.getElementById("cv-template").style.display = "grid";
-}
 
+}
 // goback
 function formCV(){
     document.getElementById("goback").style.display = "none";
